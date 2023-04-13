@@ -33,18 +33,25 @@ void linearSearch() {
 
     do {
         //Accept the number to be searched
-        cout << "\nEnter the element you want to search : ";                    //Langkah no 1
+        cout << "\nEnter the element you want to search : ";                            //Langkah no 1
         int item;
         cin >> item;
 
         ctr = 0;
-        for (i = 0; i < n; i++) {
+        for (i = 0; i < n; i++) {                                                       //langkah no 2, 3, dan 4
             ctr++;
-            if (arr[i] == item) {
+            if (arr[i] == item) {                                                       //langkah no 5
                 cout << "\n" << item << "found at position " << (i + 1) << endl;
                 break;
             }
         }
+
+        if (i == n)
+            cout << "\n" << item << " not found in the array!\n";
+        cout << "\nNumber of comparisons : " << ctr << endl;
+
+        cout << "\nContinue search (y/n) : ";
+        cin >> ch;
     }
 }
 
