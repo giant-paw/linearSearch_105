@@ -27,6 +27,21 @@ void input() {
     }
 }
 
+void linearSearch() {
+    char ch;
+    int ctr;                //Number of comparisons
+
+    do {
+        //Accept the number to be searched
+        cout << "\nEnter the element you want to search : ";                    //Langkah no 1
+        int item;
+        cin >> item;
+
+        ctr = 0;
+        
+    }
+}
+
 int main()
 {
     std::cout << "Hello World!\n";
